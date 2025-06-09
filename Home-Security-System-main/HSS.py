@@ -5,9 +5,9 @@ from datetime import datetime
 from twilio.rest import Client
 
 # Twilio credentials
-TWILIO_PHONE_NUMBER = "+13344182669"
-TWILIO_ACCOUNT_SID = "AC62b536493ab06afc3918ed76bb4b14dd"
-TWILIO_AUTH_TOKEN = "a0529ee9970ede763689258ce51bd44d"
+TWILIO_PHONE_NUMBER = "+19809982015"
+TWILIO_ACCOUNT_SID = "AC5edeb129d4c0ec87c67a765ab4093494"
+TWILIO_AUTH_TOKEN = "8fceae7a7b8e2b72224f69eaf830097e"
 
 client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
@@ -101,7 +101,7 @@ while True:
 
                 # Send SMS notification for unknown face
                 message = f"Alert: Unknown person entered your home. Face detected at {exact_time}."
-                recipients = ["+919492592373"]  # Replace with recipient numbers
+                recipients = ["+919676241580"]  # Replace with recipient numbers
                 send_sms(message, recipients)
 
         cv2.imshow("Home Surveillance", frame)
